@@ -71,6 +71,22 @@ Durid账号：admin   密码：123456
 项目的部署：直接导入IDEA即可使用，ecplise也可以使用。
 
 页面展示：
-登录页面
+
+1.登录页面
 ![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/1.PNG)
+
+2.公司列表：
+![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/2.PNG)
+
+3.公司图表：
+![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/3.PNG)
+
+4.公司报表：
+![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/5.PNG)
+
+5.用户权限管理：
+![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/4.PNG)
+
+6.操作用户的日志管理：
+![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/6.PNG)
 
