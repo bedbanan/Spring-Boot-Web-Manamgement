@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    session:
+        timeout: 600 #session超时时间600秒
+    multipart:
+        max-file-size: -1
+        max-request-size: -1
