@@ -41,10 +41,12 @@ public class CompanyController {
         // 通过javaBean对象完成参数的交互
         companyService.save(company);
     }
-    @GetMapping("/delete")
+    @PostMapping("delete")
     @ResponseBody
-    public void delete(@RequestParam String uuid){  //删除功能,根据id删除
+    @AOPLog(operatetype = "删除",operatedesc = "删除了一个公司的信息")
+    public String delete(String uuid){  //删除功能,根据id删除
         companyService.delete(uuid);
+        return "OK";
     }
 
     @RequestMapping("/findAll")

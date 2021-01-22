@@ -19,7 +19,25 @@ require(
                     },
                     'click .delete':function(e,value,row,index){
                         //执行删除操作
-                        alert("点击了删除图标："+row.uuid);
+                        // alert("点击了删除图标："+row.uuid);
+                        //删除记录
+                        layer.confirm('是否删除记录？',{
+                            icon: 0,
+                            btn:['取 消','确 定']
+                        },function(){
+                            layer.closeAll();
+                        },function(){
+                            $.ajax({
+                                url:'/CompanyModule/delete',
+                                type:'post',
+                                data:{uuid:row.uuid},
+                                async:true,//true为异步，false为同步
+                                complete:function(){
+                                    $("#tb_Company").bootstrapTable('refresh');
+                                }
+
+                            });
+                        });
                     }
                 };
 

@@ -44,4 +44,6 @@ public interface CompanyService {
 
     //多条件动态查询
     Page<Company> queryDynamic(Map<String,Object> res,Pageable pageable);
+
+
 }

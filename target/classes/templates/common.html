@@ -39,7 +39,7 @@
                         <li sec:authorize="hasAuthority('系统管理_账号角色权限')" ><a th:href="@{/security/ListUserRoleAuthHTML}">账号角色权限</a></li>
                         <li sec:authorize="hasAuthority('系统管理_Druid数据库连接池')"><a href="http://127.0.0.1:8080/druid/" target="_blank">Druid数据库连接池</a></li>
                         <li><a th:href="@{/SystemlogModule/listSystemlogHTML}">操作日志</a></li>
-                        <li><a href="form_wizards.html">Form Wizard</a></li>
+                        <li><a th:href="@{/quartz/cron}">表达式生成器</a></li>
                         <li><a href="form_upload.html">Form Upload</a></li>
                         <li><a href="form_buttons.html">Form Buttons</a></li>
                     </ul>
@@ -106,7 +106,8 @@
                                 <span>Settings</span>
                             </a>
                             <a class="dropdown-item"  href="javascript:;">Help</a>
-                            <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                            <a class="dropdown-item"  th:href="@{/login}" >
+                                <i class="fa fa-sign-out pull-right"></i> Log Out</a>
                         </div>
                     </li>
 
