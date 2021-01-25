@@ -39,8 +39,7 @@
                         <li sec:authorize="hasAuthority('系统管理_账号角色权限')" ><a th:href="@{/security/ListUserRoleAuthHTML}">账号角色权限</a></li>
                         <li sec:authorize="hasAuthority('系统管理_Druid数据库连接池')"><a href="http://127.0.0.1:8080/druid/" target="_blank">Druid数据库连接池</a></li>
                         <li><a th:href="@{/SystemlogModule/listSystemlogHTML}">操作日志</a></li>
-                        <li><a th:href="@{/quartz/cron}">表达式生成器</a></li>
-                        <li><a href="form_upload.html">Form Upload</a></li>
+                        <li><a th:href="@{/job/cron}">定时任务列表</a></li>
                         <li><a href="form_buttons.html">Form Buttons</a></li>
                     </ul>
                 </li>

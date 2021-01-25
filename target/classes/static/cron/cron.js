@@ -12,8 +12,8 @@ require(
                         shadeClose: true,
                         shade: 0.4,
                         maxmin: false,
-                        area: ['900px', '900px'],
-                        content: '/quartz/crone',
+                        area: ['900px', '800px'],
+                        content: '/job/crone',
                         end: function () {
                             $("#tb_Company").bootstrapTable('refresh');
                         }
