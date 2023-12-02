@@ -83,10 +83,10 @@ Durid账号：admin   密码：123456
 2.公司列表：
 
 3.公司图表：
-![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/3.PNG)
+
 
 4.公司报表：
-![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/5.PNG)
+
 
 5.用户权限管理：
 ![image](https://github.com/bedbanan/Spring-Boot-Web-Manamgement/blob/master/4.PNG)
